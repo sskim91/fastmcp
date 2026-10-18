@@ -1,7 +1,7 @@
 {
   "schema": "fastmcp-maintenance/1",
   "publisher": "fastmcp-actions",
-  "as_of": "2026-10-18T16:21:29Z",
+  "as_of": "2026-10-18T22:44:44Z",
   "automations": [
     {
       "id": "issue-link-gate",
@@ -14,8 +14,8 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/require-issue-link.yml",
       "window": "7d",
       "counts": {
-        "passed": 88,
-        "blocked": 76
+        "passed": 89,
+        "blocked": 77
       },
       "daily": [
         {
@@ -56,9 +56,9 @@
         },
         {
           "day": "2026-10-18",
-          "succeeded": 1,
+          "succeeded": 2,
           "failed": 0,
-          "blocked": 17
+          "blocked": 18
         }
       ]
     },
@@ -309,7 +309,7 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-test-failure.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 227,
+        "succeeded": 237,
         "failed": 8
       },
       "daily": [
@@ -351,7 +351,7 @@
         },
         {
           "day": "2026-10-18",
-          "succeeded": 18,
+          "succeeded": 28,
           "failed": 0,
           "blocked": 0
         }
@@ -364,12 +364,12 @@
       "cadence": "on a maintainer's comment",
       "runs_on": "github-actions",
       "state": "degraded",
-      "last_ok_day": null,
+      "last_ok_day": "2026-10-18",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-comment-on-issue.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 21,
-        "failed": 163
+        "succeeded": 22,
+        "failed": 165
       },
       "daily": [
         {
@@ -410,8 +410,8 @@
         },
         {
           "day": "2026-10-18",
-          "succeeded": 2,
-          "failed": 32,
+          "succeeded": 3,
+          "failed": 34,
           "blocked": 0
         }
       ]
@@ -623,7 +623,7 @@
           "number": 5195,
           "title": "Fix TokenCache handling for expired access tokens",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5195",
-          "age_days": 26
+          "age_days": 27
         },
         {
           "number": 5235,
@@ -653,7 +653,7 @@
           "number": 5487,
           "title": "Fix #5474: Namespaced mounts list non-hierarchical resource URIs but cannot read ",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5487",
-          "age_days": 12
+          "age_days": 13
         }
       ],
       "id": "contributor-queue",
@@ -668,28 +668,33 @@
       "counts": {
         "waiting": 75,
         "oldest_days": 37,
-        "waiting_over_7_days": 39
+        "waiting_over_7_days": 40
       }
     }
   ],
   "main": {
-    "sha": "7e107c9cfb7a3cf56d74fcfa936e59b4c3b7cf01",
-    "url": "https://github.com/PrefectHQ/fastmcp/commit/7e107c9cfb7a3cf56d74fcfa936e59b4c3b7cf01",
+    "sha": "adf90b661038faf2d35f965f7563d0728bd7a7e8",
+    "url": "https://github.com/PrefectHQ/fastmcp/commit/adf90b661038faf2d35f965f7563d0728bd7a7e8",
     "checks": [
       {
         "name": "Tests",
         "state": "ok",
-        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39132346797"
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39158063264"
       },
       {
         "name": "Run static analysis",
         "state": "ok",
-        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39132346754"
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39158063219"
       },
       {
         "name": "CodeQL",
         "state": "ok",
-        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39132346539"
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39158062960"
+      },
+      {
+        "name": "Downstream smoke",
+        "state": "ok",
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/39158063260"
       }
     ]
   },
@@ -707,11 +712,11 @@
   "attention": {
     "schema": "fastmcp-attention/1",
     "repo": "PrefectHQ/fastmcp",
-    "as_of": "2026-10-18T16:20:04.424187+00:00",
+    "as_of": "2026-10-18T22:43:29.232076+00:00",
     "profile": "public-issue-signals",
     "judge": "jev",
     "assessment_model": "jev:jev-latest",
-    "judged": 395,
+    "judged": 396,
     "examined": 396,
     "has_more": false,
     "selection": "newest open issues",
@@ -10343,6 +10348,95 @@
         ]
       },
       {
+        "number": 5754,
+        "title": "Config entry 'timeout' field is silently ignored (RemoteMCPServer/StdioMCPServer) \u2014 no request limit applied",
+        "url": "https://github.com/PrefectHQ/fastmcp/issues/5754",
+        "updated_at": "2026-10-18T17:18:11+00:00",
+        "score": 6.61,
+        "kind": "bug",
+        "judged": true,
+        "assessment": {
+          "kind": {
+            "bug": 1.0,
+            "regression": 0.0,
+            "feature": 0.0,
+            "question": 0.0,
+            "docs": 0.0,
+            "other": 0.0
+          },
+          "repro": 0.97,
+          "actionable": 1.0,
+          "severity": 0.68,
+          "security": 0.06,
+          "spec": 0.16,
+          "downstream": 0.22
+        },
+        "input_digest": "81f501b6a3d1985dc073358cb25435bf723ad5a84a8f326c9ac615722b310df6",
+        "reasons": [
+          {
+            "signal": "severity",
+            "text": "potential impact",
+            "contribution": 2.04
+          },
+          {
+            "signal": "neglect",
+            "text": "awaiting maintainer reply",
+            "contribution": 1.5
+          },
+          {
+            "signal": "handled",
+            "text": "assigned or linked to a fix",
+            "contribution": -1.5
+          },
+          {
+            "signal": "repro",
+            "text": "reproduction provided",
+            "contribution": 1.46
+          },
+          {
+            "signal": "actionable",
+            "text": "actionable report",
+            "contribution": 1.0
+          },
+          {
+            "signal": "regression",
+            "text": "possible regression",
+            "contribution": 0.64
+          },
+          {
+            "signal": "release_proximity",
+            "text": "reported near a relevant release",
+            "contribution": 0.38
+          },
+          {
+            "signal": "engagement",
+            "text": "community engagement",
+            "contribution": 0.36
+          },
+          {
+            "signal": "downstream",
+            "text": "downstream integration affected",
+            "contribution": 0.33
+          },
+          {
+            "signal": "security",
+            "text": "security-sensitive report",
+            "contribution": 0.24
+          },
+          {
+            "signal": "spec",
+            "text": "protocol conformance",
+            "contribution": 0.16
+          }
+        ],
+        "maintainer_replied": false,
+        "assigned": false,
+        "linked_prs": [
+          5758,
+          5760
+        ]
+      },
+      {
         "number": 4929,
         "title": "DeclinedElicitation and CancelledElicitation are truthy, so the obvious approval guard permits refused actions",
         "url": "https://github.com/PrefectHQ/fastmcp/issues/4929",
@@ -12455,91 +12549,6 @@
         "maintainer_replied": true,
         "assigned": true,
         "linked_prs": []
-      },
-      {
-        "number": 5754,
-        "title": "Config entry 'timeout' field is silently ignored (RemoteMCPServer/StdioMCPServer) \u2014 no request limit applied",
-        "url": "https://github.com/PrefectHQ/fastmcp/issues/5754",
-        "updated_at": "2026-10-15T19:16:25+00:00",
-        "score": 6.25,
-        "kind": "bug",
-        "judged": true,
-        "assessment": {
-          "kind": {
-            "bug": 1.0,
-            "regression": 0.0,
-            "feature": 0.0,
-            "question": 0.0,
-            "docs": 0.0,
-            "other": 0.0
-          },
-          "repro": 0.97,
-          "actionable": 1.0,
-          "severity": 0.68,
-          "security": 0.06,
-          "spec": 0.16,
-          "downstream": 0.22
-        },
-        "input_digest": "81f501b6a3d1985dc073358cb25435bf723ad5a84a8f326c9ac615722b310df6",
-        "reasons": [
-          {
-            "signal": "severity",
-            "text": "potential impact",
-            "contribution": 2.04
-          },
-          {
-            "signal": "neglect",
-            "text": "awaiting maintainer reply",
-            "contribution": 1.5
-          },
-          {
-            "signal": "handled",
-            "text": "assigned or linked to a fix",
-            "contribution": -1.5
-          },
-          {
-            "signal": "repro",
-            "text": "reproduction provided",
-            "contribution": 1.46
-          },
-          {
-            "signal": "actionable",
-            "text": "actionable report",
-            "contribution": 1.0
-          },
-          {
-            "signal": "regression",
-            "text": "possible regression",
-            "contribution": 0.64
-          },
-          {
-            "signal": "release_proximity",
-            "text": "reported near a relevant release",
-            "contribution": 0.38
-          },
-          {
-            "signal": "downstream",
-            "text": "downstream integration affected",
-            "contribution": 0.33
-          },
-          {
-            "signal": "security",
-            "text": "security-sensitive report",
-            "contribution": 0.24
-          },
-          {
-            "signal": "spec",
-            "text": "protocol conformance",
-            "contribution": 0.16
-          }
-        ],
-        "maintainer_replied": false,
-        "assigned": false,
-        "linked_prs": [
-          5757,
-          5758,
-          5760
-        ]
       },
       {
         "number": 2026,
@@ -15528,6 +15537,84 @@
         "maintainer_replied": false,
         "assigned": false,
         "linked_prs": []
+      },
+      {
+        "number": 5819,
+        "title": "[Bug] Skills with non-ASCII directory names are listed but unreadable; space-containing names silently disappear",
+        "url": "https://github.com/PrefectHQ/fastmcp/issues/5819",
+        "updated_at": "2026-10-18T13:49:46+00:00",
+        "score": 5.53,
+        "kind": "bug",
+        "judged": true,
+        "assessment": {
+          "kind": {
+            "bug": 1.0,
+            "regression": 0.0,
+            "feature": 0.0,
+            "question": 0.0,
+            "docs": 0.0,
+            "other": 0.0
+          },
+          "repro": 0.98,
+          "actionable": 1.0,
+          "severity": 0.66,
+          "security": 0.04,
+          "spec": 0.37,
+          "downstream": 0.08
+        },
+        "input_digest": "4d4fbf81b1f8bc6d20b06c8364e249903c9570d338120aa102e1705e15c1662a",
+        "reasons": [
+          {
+            "signal": "severity",
+            "text": "potential impact",
+            "contribution": 1.98
+          },
+          {
+            "signal": "handled",
+            "text": "assigned or linked to a fix",
+            "contribution": -1.5
+          },
+          {
+            "signal": "repro",
+            "text": "reproduction provided",
+            "contribution": 1.47
+          },
+          {
+            "signal": "regression",
+            "text": "possible regression",
+            "contribution": 1.21
+          },
+          {
+            "signal": "actionable",
+            "text": "actionable report",
+            "contribution": 1.0
+          },
+          {
+            "signal": "release_proximity",
+            "text": "reported near a relevant release",
+            "contribution": 0.72
+          },
+          {
+            "signal": "spec",
+            "text": "protocol conformance",
+            "contribution": 0.37
+          },
+          {
+            "signal": "security",
+            "text": "security-sensitive report",
+            "contribution": 0.16
+          },
+          {
+            "signal": "downstream",
+            "text": "downstream integration affected",
+            "contribution": 0.12
+          }
+        ],
+        "maintainer_replied": false,
+        "assigned": false,
+        "linked_prs": [
+          5820
+        ]
       },
       {
         "number": 5524,
@@ -30307,34 +30394,6 @@
         "maintainer_replied": false,
         "assigned": false,
         "linked_prs": []
-      },
-      {
-        "number": 5819,
-        "title": "[Bug] Skills with non-ASCII directory names are listed but unreadable; space-containing names silently disappear",
-        "url": "https://github.com/PrefectHQ/fastmcp/issues/5819",
-        "updated_at": "2026-10-18T13:49:46+00:00",
-        "score": -0.78,
-        "kind": "unclassified",
-        "judged": false,
-        "assessment": null,
-        "input_digest": "4d4fbf81b1f8bc6d20b06c8364e249903c9570d338120aa102e1705e15c1662a",
-        "reasons": [
-          {
-            "signal": "handled",
-            "text": "assigned or linked to a fix",
-            "contribution": -1.5
-          },
-          {
-            "signal": "release_proximity",
-            "text": "reported near a relevant release",
-            "contribution": 0.72
-          }
-        ],
-        "maintainer_replied": false,
-        "assigned": false,
-        "linked_prs": [
-          5820
-        ]
       },
       {
         "number": 1587,
